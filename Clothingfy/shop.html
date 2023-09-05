@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title> Clothingfy Shop - Product Listing Page</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="apple-touch-icon" href="assets/img/clothingfy-low-resolution-logo-color-on-transparent-background.png">
+   <link rel="shortcut icon" type="image/x-icon"
+      href="assets/img/clothingfy-low-resolution-logo-color-on-transparent-background.png">
+
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/templatemo.css">
+   <link rel="stylesheet" href="assets/css/custom.css">
+   <link rel="stylesheet" href="assets/css/slick-theme.css">
+   <link rel="stylesheet" href="assets/css/cart.css">
+
+   <!-- Load fonts style after rendering the layout styles -->
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+   <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light shadow">
+      <div class="container d-flex justify-content-between align-items-center">
+
+         <a class="navbar-brand text-success logo h1 align-self-center" href="Home.html">
+            Clothingfy
+         </a>
+
+         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+            id="templatemo_main_nav">
+            <div class="flex-fill">
+               <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="Home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="navbar align-self-center d-flex">
+               <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                  <div class="input-group">
+                     <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                     <div class="input-group-text">
+                        <i class="fa fa-fw fa-search"></i>
+                     </div>
+                  </div>
+               </div>
+               <i class="fa fa-fw fa-search text-dark mr-2"></i>
+               </a>
+
+
+               <div class="nav-icon-container">
+                  <div class="row">
+                     <div class="col">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                           data-bs-target="#cart"> <a href="#" class="text-white"><i
+                                 class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i><span class="total-count"></span>
+                           </a></button>
+                        <button class="clear-cart btn btn-danger">Clear Cart</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </nav>
+
+   <!-- Modal -->
+   <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+              
+            </table>
+            <div>Total price: $<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+
+   <!-- Start Content -->
+   <section class="inner_page_head">
+      <div class="container_fuild">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="filter-list">
+                  <h3>Filter</h3>
+                  <button class="btn btn-default filter-button active" data-filter="all">All</button>
+                  <button class="btn btn-default filter-button" data-filter="women">Women</button>
+                  <button class="btn btn-default filter-button" data-filter="men">Men</button>
+               </div>
+            </div>
+   </section>
+   <!-- end inner page section -->
+   <!-- product section -->
+   <section class="product_section layout_padding">
+      <div class="container">
+         <div class="heading_container heading_center">
+            <h2>
+               Our <span>products</span>
+            </h2>
+         </div>
+         <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter men">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Men's Shirt" data-price="75" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image shop-item-image">
+                     <img src="assets/img/p1.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Men's Shirt
+                     </h5>
+                     <h6 class="card-text">
+                        $75
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter men">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Men's Shirt" data-price="80" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p2.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Men's Shirt
+                     </h5>
+                     <h6 class="card-text">
+                        $80
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter women">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Women's Dress" data-price="68" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p3.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Women's Dress
+                     </h5>
+                     <h6 class="card-text">
+                        $68
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter women">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Women's Dress" data-price="70" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p4.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Women's Dress
+                     </h5>
+                     <h6 class="card-text">
+                        $70
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter women">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Women's Dress" data-price="75" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p5.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Women's Dress
+                     </h5>
+                     <h6 class="card-text">
+                        $75
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter women">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Women's Dress" data-price="58" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p6.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Women's Dress
+                     </h5>
+                     <h6 class="card-text">
+                        $58
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter women">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Women's Dress" data-price="80" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p7.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Women's Dress
+                     </h5>
+                     <h6 class="card-text">
+                        $80
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter men">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Men's Shirt" data-price="65" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p8.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Men's Shirt
+                     </h5>
+                     <h6 class="card-text">
+                        $65
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter men">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Men's Shirt" data-price="65" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p9.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Men's Shirt
+                     </h5>
+                     <h6 class="card-text">
+                        $65
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter men">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Men's Shirt" data-price="65" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p10.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Men's Shirt
+                     </h5>
+                     <h6 class="card-text">
+                        $65
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter men">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Men's Shirt" data-price="65" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p11.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                     <h5 class="card-title">
+                        Men's Shirt
+                     </h5>
+                     <h6 class="card-text">
+                        $65
+                     </h6>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 product filter women">
+               <div class="box">
+                  <div class="option_container">
+                     <div class="options">
+                        <a href="#" data-name="Women's Dress" data-price="65" class="add-to-cart btn btn-primary">Add to
+                           cart</a>
+                     </div>
+                  </div>
+                  <div class="img-box shop-item-image">
+                     <img src="assets/img/p12.png" alt="">
+                  </div>
+                  <div class="detail-box ">
+                     <h5 class="card-title">
+                        Women's Dress
+                     </h5>
+                     <h6 class="card-text">
+                        $65
+                     </h6>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </section>
+   <!-- end product section -->
+   <!-- End Content -->
+
+
+
+   <!-- End Content -->
+   <!-- Start Brands -->
+   <section class="bg-light py-5">
+      <div class="container my-4">
+         <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+               <h1 class="h1">Our Brands</h1>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  Lorem ipsum dolor sit amet.
+               </p>
+            </div>
+            <div class="col-lg-9 m-auto tempaltemo-carousel">
+               <div class="row d-flex flex-row">
+
+
+                  <!--Carousel Wrapper-->
+                  <div class="col">
+                     <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="multi-item-example"
+                        data-bs-ride="carousel">
+                        <!--Slides-->
+                        <div class="carousel-inner product-links-wap" role="listbox">
+
+                           <!--First slide-->
+                           <div class="carousel-item active">
+                              <div class="row">
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--End First slide-->
+
+                           <!--Second slide-->
+                           <div class="carousel-item">
+                              <div class="row">
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--End Second slide-->
+
+                           <!--Third slide-->
+                           <div class="carousel-item">
+                              <div class="row">
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                                 <div class="col-3 p-md-5">
+                                    <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png"
+                                          alt="Brand Logo"></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--End Third slide-->
+
+                        </div>
+                        <!--End Slides-->
+                     </div>
+                  </div>
+                  <!--End Carousel Wrapper-->
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--End Brands-->
+
+
+   <!-- Start Footer -->
+   <footer class="bg-dark" id="tempaltemo_footer">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-md-4 pt-5">
+               <h2 class="h2 text-success border-bottom pb-3 border-light logo">Clothingfy Shop</h2>
+               <ul class="list-unstyled text-light footer-link-list">
+                  <li>
+                     <i class="fas fa-map-marker-alt fa-fw"></i>
+                     123 Consectetur at ligula 10660
+                  </li>
+                  <li>
+                     <i class="fa fa-phone fa-fw"></i>
+                     <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                  </li>
+                  <li>
+                     <i class="fa fa-envelope fa-fw"></i>
+                     <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="col-md-4 pt-5">
+               <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+               <ul class="list-unstyled text-light footer-link-list">
+                  <li><a class="text-decoration-none" href="#">Luxury</a></li>
+                  <li><a class="text-decoration-none" href="#">Men's Shirt</a></li>
+                  <li><a class="text-decoration-none" href="#">Women's Dress</a></li>
+                  <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
+               </ul>
+            </div>
+
+            <div class="col-md-4 pt-5">
+               <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+               <ul class="list-unstyled text-light footer-link-list">
+                  <li><a class="text-decoration-none" href="Home.html">Home</a></li>
+                  <li><a class="text-decoration-none" href="about.html">About Us</a></li>
+                  <li><a class="text-decoration-none" href="contact.html">Contact</a></li>
+               </ul>
+            </div>
+
+         </div>
+
+         <div class="row text-light mb-4">
+            <div class="col-12 mb-3">
+               <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+            <div class="col-auto me-auto">
+               <ul class="list-inline text-left footer-icons">
+                  <li class="list-inline-item border border-light rounded-circle text-center">
+                     <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
+                           class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                  </li>
+                  <li class="list-inline-item border border-light rounded-circle text-center">
+                     <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i
+                           class="fab fa-instagram fa-lg fa-fw"></i></a>
+                  </li>
+                  <li class="list-inline-item border border-light rounded-circle text-center">
+                     <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
+                           class="fab fa-twitter fa-lg fa-fw"></i></a>
+                  </li>
+                  <li class="list-inline-item border border-light rounded-circle text-center">
+                     <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i
+                           class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-auto">
+               <label class="sr-only" for="subscribeEmail">Email address</label>
+               <div class="input-group mb-2">
+                  <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
+                     placeholder="Email address">
+                  <div class="input-group-text btn-success text-light">Subscribe</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <button id="btn" onclick="window.scrollTo(0,0)"><i class='fas fa-angle-double-up'></i> </button>
+
+
+   </footer>
+   <!-- End Footer -->
+   <!-- Start Script -->
+   <script src="assets/js/jquery-1.11.0.min.js"></script>
+   <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="assets/js/custom.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/slick.min.js"></script>
+   <!-- End Script -->
+</body>
+
+</html>
